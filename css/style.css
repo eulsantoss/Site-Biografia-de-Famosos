@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: .5fr 3fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "h h"
+    "m m"
+    "f f";
+}
+
+header {
+    background-color: blue;
+    grid-area: h;
+}
+
+main {
+    grid-area: m;
+}
+
+aside {
+    grid-area: a;
+    background-color: green;
+}
+
+footer {
+    grid-area: f;
+    background-color: black;
+}
+
+/*Estilização do site*/
+hr {
+    border: 1px solid black;
+}
+
+/* Área do índice da biografia */
+
+#b-index li a {
+    text-decoration: none;
+    color: rgb(0, 118, 192);
+}
+
+#b-index li a:hover {
+    color: rgb(2, 78, 126);
+}
+
+#logo {
+    text-align: center;
+    background-color: black;
+    /*background-image: url('../images/background-header.png');*/
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#logo img {
+    width: 13%;
+    min-width: 150px;
+}
+
+#background1 {
+    background-image: url('../images/arrascaeta1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#background1 h2 {
+    display: flex;
+    align-self: center;
+    color: white;
+    letter-spacing: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5vw;
+    padding: 15px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+#biography fieldset, #career fieldset {
+    border: none;
+    border-top: 2px solid rgb(0, 0, 0);
+    margin: 0 5vw;
+    text-align: center;
+}
+
+#biography legend, #career legend {
+    
+    margin: 2rem 0;
+    color: rgb(0, 0, 0);
+    font-size: 2vh;
+}
+
+.b-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 60vw;
+    font-size: 1.8vh;
+    line-height: 3.5vh;
+    color: rgb(0, 0, 0);
+    letter-spacing: .5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.b-content img {
+    width: 100%;
+}
+
+.b-content ul {
+    margin-left: 40px;
+}
+
+.font-list {
+    font-family: sans-serif;
+    font-size: 2vh;
+}
+
+/* Área do botão lateral */
+
+#botao-lateral {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 1%;
+    bottom: 2%;
+    background-color: rgb(218, 218, 218);
+    transition: 700ms;
+    border-radius: 30px;
+    text-align: center;
+    opacity: 70%;
+}
+
+#botao-lateral:hover {
+    opacity: 100%;
+}
+
+#botao-lateral img {
+    width: 90%;
+    padding: 5px;
+    box-sizing: border-box;
+}
