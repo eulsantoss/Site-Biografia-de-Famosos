@@ -43,7 +43,7 @@ hr {
     border: 1px solid black;
 }
 
-/* Área do índice da biografia */
+/*Área do índice da biografia*/
 
 #b-index li a {
     text-decoration: none;
@@ -53,6 +53,8 @@ hr {
 #b-index li a:hover {
     color: rgb(2, 78, 126);
 }
+
+/*Fim do índice da biografia*/
 
 #logo {
     text-align: center;
@@ -137,7 +139,20 @@ hr {
     font-size: 2vh;
 }
 
-/* Área do botão lateral */
+ul#social-medias {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+#social-medias li a img {
+    width: 60px;
+    border-radius: 30px;
+    margin: 5px;
+}
+/*Fim da estilização do site*/
+
+/*Área do botão lateral*/
 
 #botao-lateral {
     width: 60px;
@@ -160,4 +175,47 @@ hr {
     width: 90%;
     padding: 5px;
     box-sizing: border-box;
+}
+
+/*Fim da área do botão lateral*/
+
+/*Área do Footer*/
+
+footer {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer section {
+    width: 40%;
+    display: flex;
+    margin: 0 auto;
+}
+
+footer section div {
+    width: 100%;
+    margin: 10px 2vw;
+}
+
+footer section div ul {
+    list-style: none;
+}
+
+footer section div ul li {
+    padding: 3px;
+    margin: 1vw;
+    color: white;
+}
+
+footer section div ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer section div ul li a:hover {
+    text-decoration: underline;
+}
+
+#copyright {
+    text-align: center;
 }
